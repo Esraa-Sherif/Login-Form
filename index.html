@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div
+      class="main-cont container-md flex-column d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="login-cont text-dark rounded-1 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h2 id="heading" class="text-capitalize fw-bold m-0 my-3">Login</h2>
+        <div class="forms">
+          <label id="label-user" for="userName" class="mt-2 d-none"
+            >Username
+            <small class="text-danger">from 5 to 15 character</small>
+          </label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Type yor username"
+            class="d-none placeicon w-100 mb-2"
+          />
+          <label for="email" id="label-email" class="mt-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Type yor Email"
+            class="placeicon w-100 mb-2"
+          />
+          <label for="password" class="mt-2">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Type yor password"
+            class="placeicon w-100"
+          />
+        </div>
+        <p class="my-3 align-self-start">
+          <a class="fw-bolder">Forgot Password?</a>
+        </p>
+        <p id="succ" class="align-self-start fw-bolder opacity-0 m-0 success">
+          Success
+        </p>
+        <button id="login-btn" class="btn btn-grad rounded-pill w-100">
+          mm
+        </button>
+        <p class="my-3">
+          Don't have an account? <a id="sign-up" class="fw-bolder">Sign Up</a>
+        </p>
+        <p>Or Using</p>
+        <div
+          class="icons mb-4 d-flex justify-content-between align-items-center"
+        >
+          <div
+            class="me-1 round-icon d-flex justify-content-center align-items-center fa"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+
+          <div
+            class="me-1 round-icon d-flex justify-content-center align-items-center tw"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+
+          <div
+            class="me-1 round-icon d-flex justify-content-center align-items-center go"
+          >
+            <i class="fa-solid fa-g"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

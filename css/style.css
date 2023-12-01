@@ -1,0 +1,133 @@
+:root{
+    --light-grey : rgb(215, 207, 207)
+}
+body{
+    height:100vh;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+.login-cont{
+    background-color: #fff !important;
+    height: auto;
+    margin: 40px;
+    padding:0px 40px;
+    width: 30%;
+
+
+}
+a{
+    cursor: pointer;
+}
+.main-cont{
+    height: 100vh;
+}
+.forms input{
+    border:none;
+    outline:none;
+    font-size: 0.7rem;
+    border-bottom: 1px solid var(--light-grey);
+    transition: 0.8s all;
+}
+.forms input:focus{
+    outline:none;
+    border-bottom: 1px solid rgb(90, 84, 84);
+}
+.forms label{
+    font-size: 0.7rem;
+}
+.forms input::placeholder{
+    color: var(--light-grey);
+    font-size: 0.74rem;
+    text-transform: capitalize;
+
+}
+.placeicon{
+    /* font-family: fontawesome; */
+    text-transform: lowercase;
+}
+.success {
+    color: green;
+}
+
+.btn{
+    font-size: 0.7rem;
+}
+.login-cont p{
+    font-size: 0.7rem;
+
+}
+.login-cont p.left{
+text-align: left;
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #c2e59c 0%, #64b3f4  51%, #c2e59c  100%);
+    margin: 20px;
+    padding: 5px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .grad{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,121,9,1) 18%, rgba(233,142,142,1) 39%, rgba(158,173,30,1) 75%, rgba(0,212,255,1) 100%);
+  }
+  .round-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #FFF;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+  .round-icon.fa{
+    background-color: rgb(55,81,151);
+  }
+  .round-icon.tw{
+    background-color: rgb(36,125,186);
+  }
+  .round-icon.go{
+    background-color: rgb(210,71,54);
+  }
+  ::placeholder { /* Recent browsers */
+    text-transform: none;
+}
+@media screen and (max-width:992) {
+    .login-cont{
+        width: 50%;    
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .login-cont{
+        width: 45%;    
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .login-cont{
+        width: 45%;    
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .login-cont{
+        width: 75%;   
+        padding: 0px 30px; 
+    }
+    
+}
